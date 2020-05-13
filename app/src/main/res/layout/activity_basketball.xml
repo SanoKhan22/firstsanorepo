@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".basketball">
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Team A"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00"
+        android:layout_marginBottom="30dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/three_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="gainthree"
+        android:text="+3 Points" />
+
+    <Button
+        android:id="@+id/twopoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="gaintwo"
+        android:text="+2 Points"/>
+
+    <Button
+        android:id="@+id/freepoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="gainone"
+        android:text="Free Throw"/>
+
+
+
+</LinearLayout>
+
+
+
+
+    //2
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        tools:context=".basketball">
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Team B"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/scoreOfTeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00"
+            android:layout_marginBottom="30dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/three_pointsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="gainthreeb"
+            android:text="+3 Points" />
+
+        <Button
+            android:id="@+id/twopointsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="gaintwob"
+            android:text="+2 Points"/>
+
+        <Button
+            android:id="@+id/freepointsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="gainoneb"
+            android:text="Free Throw "/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        // resetbtn
+
+            <Button
+                android:id="@+id/resetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="reset"
+                android:text="RESET " />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
